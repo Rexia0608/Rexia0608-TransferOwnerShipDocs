@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Google Drive Files</title>
+</head>
+<body>
+    <h1>Your Google Drive Files</h1>
+    <a href="/auth/logout">Logout</a>
+    
+    <h2>Select a file to transfer:</h2>
+    <ul>
+        <% files.forEach(file => { %>
+            <li>
+                <%= file.name %> (<%= file.mimeType %>)
+                <a href="/transfer/transfer/<%= file.id %>">Transfer Ownership</a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Drive Ownership Transfer</title>
+</head>
+<body>
+    <h1>Google Drive Ownership Transfer</h1>
+    
+    <% if (typeof error !== 'undefined') { %>
+        <p style="color: red;">Error: <%= error %></p>
+    <% } %>
+    
+    <% if (loggedIn) { %>
+        <p>You are logged in!</p>
+        <a href="/transfer/files">View your files</a>
+        <br>
+        <a href="/auth/logout">Logout</a>
+    <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+    <% } %>
+</body>
+</html>

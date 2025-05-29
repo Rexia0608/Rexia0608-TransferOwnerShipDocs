@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer Ownership</title>
+</head>
+<body>
+    <h1>Transfer Ownership</h1>
+    
+    <form action="/transfer/transfer" method="POST">
+        <input type="hidden" name="fileId" value="<%= fileId %>">
+        
+        <label for="newOwnerEmail">New Owner's Email:</label>
+        <input type="email" id="newOwnerEmail" name="newOwnerEmail" required>
+        
+        <button type="submit">Transfer Ownership</button>
+    </form>
+</body>
+</html>
