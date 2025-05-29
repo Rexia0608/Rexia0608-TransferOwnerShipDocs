@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer Error</title>
+</head>
+<body>
+    <h1>Ownership Transfer Failed</h1>
+    <% if (typeof error !== 'undefined') { %>
+        <p>Error: <%= error %></p>
+    <% } %>
+    <a href="/transfer/files">Try Again</a>
+</body>
+</html>
